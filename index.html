@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Trabalho M2</title>
+</head>
+
+<body>
+	<h2>Formulário de cadastro de prestador de serviços</h2>
+	<form id="formulario" name="formulario" action="">
+		<h1 id="titulo" style="display: none;"></h1>
+		<div class="row">
+			<div class="campo" style="flex-grow: 1">
+				<label for="nome">Nome</label>
+				<input type="text" name="nome" id="nome" minlength="3" />
+			</div>
+			<div class="campo" style="flex-grow: 1">
+				<label for="sobrenome">Sobrenome</label>
+				<input type="text" name="sobrenome" id="sobrenome" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="vertical-row" style="flex-grow: 9">
+				<div class="campo" style="flex-grow: 1; margin-top: 5px;">
+					<label for="email">E-mail</label>
+					<input type="email" name="email" id="email" />
+				</div>
+				<div class="campo" style="flex-grow: 2">
+					<label for="website">Website</label>
+					<input type="url" name="website" id="website" />
+				</div>
+			</div>
+			<fieldset class="grupo row" style="flex-grow: 1">
+				<legend>Período de dispibilidade</legend>
+				<div class="campo" style="flex-grow: 1">
+					<label for="dataini">Data inicial</label>
+					<input type="date" name="dataini" id="dataini" />
+				</div>
+				<div class="campo" style="flex-grow: 1">
+					<label for="datafim">Data final</label>
+					<input type="date" name="datafim" id="datafim" />
+				</div>
+			</fieldset>
+		</div>
+		<div class="row">
+			<fieldset class="grupo" style="flex-grow: 1">
+				<fieldset id="regiao" class="grupo" style="flex-grow: 1">
+					<legend>Principal região de atuação</legend>
+					<input type="radio" name="regiao" id="sul" value="sul" />
+					<label for="sul">Sul</label>
+					<input type="radio" name="regiao" id="sudeste" value="sudeste" />
+					<label for="sudeste">Sudeste</label>
+					<input type="radio" name="regiao" id="centro" value="centro-oeste" />
+					<label for="centro">Centro-oeste</label>
+					<input type="radio" name="regiao" id="nordeste" value="nordeste" />
+					<label for="nordeste">Nordeste</label>
+					<input type="radio" name="regiao" id="norte" value="norte" />
+					<label for="norte">Norte</label>
+				</fieldset>
+			</fieldset>
+			<fieldset class="grupo" style="flex-grow: 2">
+				<fieldset id="atividades" class="grupo" style="flex-grow: 2">
+					<legend>Atividades pretendidas</legend>
+					<input type="checkbox" name="atividade" id="analista" value="analista" />
+					<label for="analista">Analista</label>
+					<input type="checkbox" name="atividade" id="programador" value="programador" />
+					<label for="programador">Programador</label>
+					<input type="checkbox" name="atividade" id="webdesigner" value="webdesigner" />
+					<label for="webdesigner">Web-designer</label>
+					<input type="checkbox" name="atividade" id="dba" value="dba" />
+					<label for="dba">DBA</label>
+					<input type="checkbox" name="atividade" id="administrador" value="administrador-rede" />
+					<label for="administrador">Administrador de rede</label>
+				</fieldset>
+			</fieldset>
+		</div>
+		<div class="row">
+			<fieldset class="acoes" style="flex-grow: 1">
+				<legend>Ações</legend>
+				<button type='submit' id="Enviar">Enviar</button>
+				<button type='reset' id="Reiniciar">Reiniciar</button>
+			</fieldset>
+		</div>
+	</form>
+
+	<br>
+
+	<table id="tabela-prestadores" border="1">
+		<thead>
+			<th>indice</th>
+			<th>nome</th>
+			<th>sobrenome</th>
+			<th>email</th>
+			<th>site</th>
+			<th>data inicial</th>
+			<th>data final</th>
+			<th>regiao</th>
+			<th>atividades</th>
+			<th>Ações</th>
+		</thead>
+		<tbody>
+
+		</tbody>
+	</table>
+
+	<script src="main.js"></script>
+</body>
+
+</html>

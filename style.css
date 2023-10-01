@@ -1,0 +1,125 @@
+h2{
+    color: #fff;
+    border: 1px solid rgb(209, 189, 58);
+    border-radius: 5px; 
+    background-color: rgb(209, 189, 58);   
+    text-align: center;
+    padding: 8px;
+    margin: 0 auto;
+    width: 62%;
+}
+form {
+    max-width: 60%;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.99);
+    background-color: #1d315b;
+    border: 1px solid rgb(15, 154, 224);
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form h1 {
+    margin: 5px;
+}
+
+.acoes {
+    text-align: center;
+}
+
+.campo label {
+    color: rgba(255, 255, 255, 0.99);
+}
+
+.campo input,
+select {
+    width: 95%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(209, 189, 58);
+    padding-left: 5px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vertical-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid rgb(209, 189, 58);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+legend {
+    padding: 0.2em 0.5em;
+    border: 1px solid rgb(209, 189, 58);
+    color: rgba(255, 255, 255, 0.99);
+    font-size: 90%;
+    text-align: center;
+}
+
+button {
+    width: 82px;
+    height: 35px;
+    padding: 10px 15px;
+    border: 1px solid rgb(209, 189, 58);
+    border-radius: 5px;
+    background-color: rgb(209, 189, 58);
+    color: rgba(255, 255, 255, 0.8);
+    transition: opacity 0.3s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: rgb(0, 0, 0);
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    border: 1px solid rgb(209, 189, 58);
+    border-radius: 5px;
+}
+
+table th {
+    background-color: rgb(209, 189, 58);
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid rgb(209, 189, 58);
+    border-radius: 2px;
+    text-transform: capitalize;
+}
+
+table tbody {
+    background-color: #f9f9f9;
+    color: rgb(0, 0, 0);
+}
+
+table td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid rgb(209, 189, 58);
+    background-color: #1d315b;
+    color: #f9f9f9;
+    border-radius: 3px;
+}
+
+.exclusao,
+.edicao {
+    margin: 5px;
+    width: 70px;
+    height: 35px;
+}
